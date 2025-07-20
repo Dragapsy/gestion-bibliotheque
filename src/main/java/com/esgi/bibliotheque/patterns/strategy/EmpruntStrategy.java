@@ -1,4 +1,7 @@
 package com.esgi.bibliotheque.patterns.strategy;
 
-public class EmpruntStrategy {
+import java.time.LocalDate;
+
+public interface EmpruntStrategy {
+    LocalDate calculerDateRetour(LocalDate dateEmprunt);
 }
