@@ -34,17 +34,43 @@ Relations :
 
 ---
 
-##  Endpoints REST principaux
+## Endpoints REST
 
-| Méthode | Endpoint              | Description              |
-|--------|-----------------------|--------------------------|
-| GET    | `/api/users`          | Liste des utilisateurs   |
-| POST   | `/api/users`          | Créer un utilisateur     |
-| GET    | `/api/books`          | Liste des livres         |
-| POST   | `/api/books`          | Créer un livre           |
-| GET    | `/api/emprunts`       | Liste des emprunts       |
-| POST   | `/api/emprunts`       | Enregistrer un emprunt   |
+### Utilisateurs (`/api/users`)
 
+| Méthode | Endpoint             | Rôle                              |
+|---------|----------------------|------------------------------------|
+| GET     | `/api/users`         | Récupérer la liste des utilisateurs |
+| POST    | `/api/users`         | Créer un utilisateur               |
+| GET     | `/api/users/{id}`    | Récupérer un utilisateur par ID    |
+| PUT     | `/api/users/{id}`    | Modifier un utilisateur existant   |
+| DELETE  | `/api/users/{id}`    | Supprimer un utilisateur           |
+
+---
+
+### Livres (`/api/books`)
+
+| Méthode | Endpoint             | Rôle                              |
+|---------|----------------------|------------------------------------|
+| GET     | `/api/books`         | Récupérer la liste des livres      |
+| POST    | `/api/books`         | Créer un livre                     |
+| GET     | `/api/books/{id}`    | Récupérer un livre par ID          |
+| PUT     | `/api/books/{id}`    | Modifier un livre existant         |
+| DELETE  | `/api/books/{id}`    | Supprimer un livre                 |
+
+---
+
+### Emprunts (`/api/emprunts`)
+
+| Méthode | Endpoint                | Rôle                                  |
+|---------|-------------------------|----------------------------------------|
+| GET     | `/api/emprunts`         | Récupérer la liste des emprunts        |
+| POST    | `/api/emprunts`         | Enregistrer un nouvel emprunt          |
+| GET     | `/api/emprunts/{id}`    | Récupérer un emprunt par ID            |
+| PUT     | `/api/emprunts/{id}`    | Modifier un emprunt existant           |
+| DELETE  | `/api/emprunts/{id}`    | Supprimer un emprunt                   |
+
+---
 ---
 
 ##  Swagger UI
